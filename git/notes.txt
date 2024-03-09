@@ -1,0 +1,161 @@
+- git config --global user.name "Your Name"                  - Set your username in Git
+- git config --global user.email "your-email@example.com"    - Set your email in Git
+- git config --list                                          - List all Git configuration settings
+- git config user.name                                       - Get your username in Git
+- git config user.email                                      - Get your email in Git
+
+- git config --global alias.a 'add .'                        - Set a Git alias
+- git config --get-regexp alias                              - Check all Git aliases
+
+- ssh-keygen -t ed25519 -C "your-email@example.com"          - Create a new SSH key
+- eval `ssh-agent -s`                                        - Start the ssh-agent in the background
+- ssh-add ~/.ssh/id_ed25519                                  - Add your SSH private key to the ssh-agent
+- tail ~/.ssh/id_ed25519.pub                                 - Display your SSH public key
+
+- git init                                                   - Initialize a new Git repository
+- git add .                                                  - Add all new and changed files to the staging area
+- git commit -m "message"                                    - Commit changes
+- git status                                                 - Check the status of your repository
+
+- git remote add origin https://github.com/user/repo.git     - Add a new remote repository
+- git remote                                                 - List all remote repositories
+- git remote -v                                              - List all remote repositories verbosely
+- git push -u origin master                                  - Push changes to the master branch of your remote repository
+- git pull origin master                                     - Pull changes from the master branch of your remote repository
+
+- git check-ignore *                                         - Check ignored files in the current directory and subdirectories
+- git check-ignore -v **                                     - Check ignored files in the current directory and all subdirectories verbosely
+
+- git clone https://github.com/user/repo.git                 - Clone a repository into a new directory
+- git branch                                                 - List all local branches in your repository
+- git branch -a                                              - List all branches in your repository (local and remote)
+- git branch branch-name                                     - Create a new branch
+- git checkout branch-name                                   - Switch to a specific branch
+- git merge branch-name                                      - Merge a branch into the active branch
+- git branch -d branch-name                                  - Delete a branch
+- git push origin --delete branch-name                       - Delete a remote branch
+
+- git diff                                                   - Show changes between commits, commit and working tree, etc
+- git diff --staged                                          - Show changes between the index and the last commit
+- git reset                                                  - Reset current HEAD to the specified state
+- git reset --hard HEAD                                      - Reset the index and working tree to the last commit
+
+- git stash                                                  - Stash the changes in a dirty working directory away
+- git stash apply                                            - Apply the changes stashed away
+- git stash drop                                             - Remove a single stash
+
+- git tag                                                    - Create, list, delete or verify a tag object signed with GPG
+- git tag -a v1.0 -m "my version 1.0"                        - Create an annotated tag
+- git push origin v1.0                                       - Push a tag to remote repository
+
+- git revert HEAD                                            - Revert the changes made by the last commit
+- git log                                                    - Show commit logs
+- git log --oneline                                          - Show commit logs in a single line format
+- git log --graph --decorate --oneline                       - Show commit logs in a graph format
+
+- git fetch                                                  - Download objects and refs from another repository
+- git rebase                                                 - Reapply commits on top of another base tip
+- git bisect                                                 - Use binary search to find the commit that introduced a bug
+- git cherry-pick                                            - Apply the changes introduced by some existing commits
+- git clean                                                  - Remove untracked files from the working tree
+- git reflog                                                 - Show a log of where your HEAD and branch references have been
+- git show                                                   - Show various types of objects
+- git blame                                                  - Show what revision and author last modified each line of a file
+- git ls-files                                               - Show information about files in the index and the working tree
+- git grep                                                   - Print lines matching a pattern
+- git rm                                                     - Remove files from the working tree and from the index
+- git mv                                                     - Move or rename a file, a directory, or a symlink
+- git submodule                                              - Initialize, update or inspect submodules
+- git fsck                                                   - Verifies the connectivity and validity of the objects in the database
+- git gc                                                     - Cleanup unnecessary files and optimize your local repository
+- git archive                                                - Create an archive of files from a named tree
+- git prune                                                  - Prune all unreachable objects from the object database
+- git rebase -i                                              - Interactively rebase
+- git stash list                                             - List stashes that you currently have
+- git stash pop                                              - Apply a stashed change and remove it from the stash list
+- git stash clear                                            - Remove all the stashed states
+
+- git shortlog                                               - Summarize 'git log' output
+- git describe                                               - Describe a commit using the most recent tag reachable from it
+- git apply                                                  - Apply a patch to files and/or to the index
+- git am                                                     - Apply a series of patches from a mailbox
+- git format-patch                                           - Prepare patches for e-mail submission
+- git send-email                                             - Send a collection of patches as emails
+- git bundle                                                 - Move objects and refs by archive
+- git daemon                                                 - A really simple server for Git repositories
+- git instaweb                                               - Instantly browse your working repository in gitweb
+- git archive --format=tar --prefix=john/ HEAD               - Create a tar archive that contains the contents of the latest commit on the current branch
+- git push --mirror                                          - Mirror the repository (i.e., to push all refs)
+- git push origin :branch-name                               - Delete a branch on your remote repository
+- git remote rename old-name new-name                        - Rename a remote repository
+- git remote set-url origin new-url                          - Change the url of a remote repository
+- git filter-branch                                          - Rewrite branches
+- git mergetool                                              - Run merge conflict resolution tools to resolve merge conflicts
+- git rerere                                                 - Reuse recorded resolution of conflicted merges
+- git gui                                                    - A portable graphical interface to Git
+- gitk                                                       - The Git repository browser
+
+- git worktree                                               - Manage multiple working trees
+- git notes                                                  - Add or inspect object notes
+- git rev-parse                                              - Pick out and massage parameters
+- git update-index                                           - Register file contents in the working tree to the index
+- git verify-commit                                          - Check the GPG signature of commits
+- git verify-tag                                             - Check the GPG signature of tags
+- git show-ref                                               - List references in a local repository
+- git replace                                                - Create, list, delete refs to replace objects
+- git pack-refs                                              - Pack heads and tags for efficient repository access
+- git interpret-trailers                                     - Add or parse structured information in commit messages
+- git fast-export                                            - Git data exporter
+- git fast-import                                            - Backend for fast Git data importers
+- git write-tree                                             - Create a tree object
+- git read-tree                                              - Reads tree information into the index
+- git commit-tree                                            - Create a new commit object
+- git hash-object                                            - Compute object ID and optionally creates a blob from a file
+- git cat-file                                               - Provide content or type and size information for repository objects
+- git update-ref                                             - Update the object name stored in a ref safely
+- git symbolic-ref                                           - Read, modify and delete symbolic refs
+- git reset                                                  - Reset current HEAD to the specified state
+- git add --interactive                                      - Add file contents to the index interactively
+- git commit --amend                                         - Replace the last commit with a new commit that includes additional changes
+- git rebase --continue                                      - Continue the operation in progress using the information in ".git/rebase-merge"
+- git rebase --abort                                         - Abort the operation and return to the pre-rebase position
+- git bisect start                                           - Start a bisect session
+- git bisect good                                            - Mark the current version as good
+- git bisect bad                                             - Mark the current version as bad
+- git bisect reset                                           - Finish the bisect session and return to the original HEAD
+
+- git cherry                                                 - Find commits yet to be applied to upstream
+- git name-rev                                               - Name commits
+- git rev-list                                               - Lists commit objects in reverse chronological order
+- git unpack-file                                            - Creates a new file with a blob's contents
+- git update-server-info                                     - Update auxiliary info file to help dumb servers
+- git var                                                    - Show a Git logical variable
+- git verify-pack                                            - Validate packed Git archive files
+- git whatchanged                                            - Show logs with difference each commit introduces
+- git help                                                   - Display help information about Git
+- git p4                                                     - Import from and submit to Perforce repositories
+- git send-pack                                              - Push objects over Git protocol to another repository
+- git receive-pack                                           - Receive what is pushed into the repository
+- git sh-i18n                                                - Git's i18n setup code for shell scripts
+- git sh-setup                                               - Common Git shell script setup code
+- git http-fetch                                             - Download a remote Git repository via HTTP
+- git http-push                                              - Push objects over HTTP/DAV to another repository
+- git parse-remote                                           - Routines to help parsing remote repository access parameters
+- git shell                                                  - Restricted login shell for Git-only SSH access
+- git imap-send                                              - Send a collection of patches from stdin to an IMAP folder
+- git credential                                             - Retrieve and store user credentials
+- git credential-cache                                       - Helper to temporarily store passwords in memory
+- git credential-store                                       - Helper to store credentials on disk
+- git fsck-objects                                           - Verifies the connectivity and validity of the objects in the database
+- git prune-packed                                           - Remove extra objects that are already in pack files
+- git unpack-objects                                         - Unpack objects from a packed archive
+- git mktag                                                  - Creates a tag object
+- git mktree                                                 - Build a tree-object from ls-tree formatted text
+- git commit-graph                                           - Write and verify Git commit-graph files
+- git multi-pack-index                                       - Write and verify multi-pack-indexes
+- git pack-objects                                           - Create a packed archive of objects
+- git unpack-objects                                         - Unpack objects from a packed archive
+- git pack-redundant                                         - Find redundant pack files
+- git pack-refs                                              - Pack heads and tags for efficient repository access
+- git prune                                                  - Prune all unreachable objects from the object database
+- git repack                                                 - Pack unpacked objects in a repository

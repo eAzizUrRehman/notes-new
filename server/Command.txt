@@ -1,0 +1,75 @@
+ssh root@your_server_ip
+adduser aziz
+usermod -aG sudo aziz
+ufw allow OpenSSH
+ufw enable
+sudo su
+exit
+
+ aziz12q**wAS & 12q**wAS
+
+vim MyFile.txt
+esc :wq enter
+
+nano MyFile.txt
+
+
+Passwordless logging
+
+generate public private key
+ssh-keygen -t rsa
+
+
+mkdir .ssh
+
+scp C:\Users\Signup\.ssh\id_ed25519.pub aziz@159.223.193.97:~/.ssh/authorized_keys
+
+
+Managing multiple servers
+New-Item $profile -Type File -Force
+notepad $profile
+
+
+
+paste:
+
+echo "Hello Harry, Welcome to PowerShell. Your profile works!" 
+
+function personal{
+    Start-Process ssh harry@189.59.45.126
+}
+
+function client1{
+    Start-Process ssh harry@139.39.45.126
+}
+
+function client2{
+    Start-Process ssh root@239.59.45.126
+}
+
+
+
+
+Installing LAMP Stack:
+
+
+sudo apt update
+sudo apt install apache2
+sudo ufw allow in "Apache Full"
+sudo ufw status
+sudo apt install mysql-server
+sudo mysql
+
+sudo apt install php libapache2-mod-php php-mysql
+php -v
+
+cd /var/www/html/
+ls
+vim index.html
+esc :wq enter
+
+sudo service apache2 restart
+
+
+
+sudo htop - check cpu usage

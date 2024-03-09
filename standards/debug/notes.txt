@@ -1,0 +1,23 @@
+// TODO: Indicates future tasks or features that need to be implemented.
+// Example: TODO: Implement the search feature
+
+// FIXME: Marks a piece of problematic or erroneous code that needs to be fixed.
+// Example: FIXME: This function doesn't handle null values
+
+// BUG: Indicates known bugs that need to be fixed.
+// Example: BUG: The application crashes when the input is an empty string
+
+// NOTE: Provides additional important information or clarification about the code.
+// Example: NOTE: This function assumes the input is always an array
+
+// HACK: Marks a workaround or quick-and-dirty solution for a problem.
+// Example: HACK: This is a temporary fix, we need a more robust solution
+
+// OPTIMIZE: Indicates areas of the code that could be optimized for performance.
+// Example: OPTIMIZE: This loop could be optimized by using a map
+
+// REVIEW: Marks code that should be reviewed or refactored.
+// Example: REVIEW: This function is too long, consider breaking it up into smaller functions
+
+// DEBUG: Marks areas of the code that are being debugged or need to be debugged.
+// Example: DEBUG: Check why this value is not updating
